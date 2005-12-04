@@ -1,18 +1,19 @@
 Summary:	imake utility
 Summary(pl):	Narzêdzie imake
 Name:		xorg-util-imake
-Version:	0.99.2
+Version:	0.99.3
 Release:	0.1
 License:	MIT
 Group:		X11/Development/Tools
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC2/util/imake-%{version}.tar.bz2
-# Source0-md5:	2efcc85a63705176a53146c5d3f274d3
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC3/util/imake-%{version}.tar.bz2
+# Source0-md5:	59ae6dd5359b3c30c74fa92a1be4a949
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
+BuildRequires:	cpp
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-proto-xproto-devel
-BuildRequires:	xorg-util-util-macros
+BuildRequires:	xorg-util-util-macros >= 0.99.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -45,4 +46,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog
 %attr(755,root,root) %{_bindir}/imake
-%{_mandir}/man1/imake.1*
+%attr(755,root,root) %{_bindir}/makeg
+%{_mandir}/man1/imake.1x*
+%{_mandir}/man1/makeg.1x*
