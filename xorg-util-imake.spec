@@ -1,12 +1,12 @@
 Summary:	imake utility
 Summary(pl):	Narzêdzie imake
 Name:		xorg-util-imake
-Version:	1.0.0
+Version:	1.0.1
 Release:	0.1
 License:	MIT
 Group:		X11/Development/Tools
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC4/util/imake-%{version}.tar.bz2
-# Source0-md5:	afa442819cd0cb51bbfb3f3d63c7ad68
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/util/imake-X11R7.0-%{version}.tar.bz2
+# Source0-md5:	487b4b86b2bd0c09e6d220a85d94efae
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -27,7 +27,7 @@ Narzêdzie imake oraz nastêpuj±ce programy wspieraj±ce: ccmakedep,
 mergelib, revpath, mkdirhier, makeg, cleanlinks, mkhtmlindex, xmkmf.
 
 %prep
-%setup -q -n imake-%{version}
+%setup -q -n imake-X11R7.0-%{version}
 
 %build
 %{__aclocal}
@@ -48,7 +48,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog README
+%doc COPYING ChangeLog README
 %attr(755,root,root) %{_bindir}/ccmakedep
 %attr(755,root,root) %{_bindir}/cleanlinks
 %attr(755,root,root) %{_bindir}/imake
