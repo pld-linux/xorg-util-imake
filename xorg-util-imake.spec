@@ -16,7 +16,9 @@ BuildRequires:	xorg-proto-xproto-devel
 BuildRequires:	xorg-util-util-macros >= 0.99.2
 Requires:	cpp
 Obsoletes:	xorg-util-xmkmf
+Obsoletes:	XFree86-imake
 Obsoletes:	X11-imake
+Obsoletes:	imake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
