@@ -5,7 +5,7 @@ Version:	1.0.1
 Release:	2
 License:	MIT
 Group:		X11/Development/Tools
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/util/imake-X11R7.0-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/util/imake-%{version}.tar.bz2
 # Source0-md5:	487b4b86b2bd0c09e6d220a85d94efae
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
