@@ -6,7 +6,7 @@ Release:	2
 License:	MIT
 Group:		X11/Development/Tools
 Source0:	http://xorg.freedesktop.org/releases/individual/util/imake-%{version}.tar.bz2
-# Source0-md5:	487b4b86b2bd0c09e6d220a85d94efae
+# Source0-md5:	8c859fdddd57e91132ceab1344bfe728
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
