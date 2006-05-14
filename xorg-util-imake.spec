@@ -30,7 +30,7 @@ Narzêdzie imake oraz nastêpuj±ce programy wspieraj±ce: ccmakedep,
 mergelib, revpath, mkdirhier, makeg, cleanlinks, mkhtmlindex, xmkmf.
 
 %prep
-%setup -q -n imake-X11R7.0-%{version}
+%setup -q -n imake-%{version}
 
 %build
 %{__aclocal}
