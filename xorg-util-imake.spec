@@ -1,12 +1,12 @@
 Summary:	imake utility
 Summary(pl):	Narzêdzie imake
 Name:		xorg-util-imake
-Version:	1.0.1
-Release:	2
+Version:	1.0.2
+Release:	1
 License:	MIT
 Group:		X11/Development/Tools
 Source0:	http://xorg.freedesktop.org/releases/individual/util/imake-%{version}.tar.bz2
-# Source0-md5:	8c859fdddd57e91132ceab1344bfe728
+# Source0-md5:	02fea5a02ba2857c7d81820c8e8b8e6f
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
