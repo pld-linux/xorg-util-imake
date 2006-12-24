@@ -1,5 +1,5 @@
-Summary:	imake utility
-Summary(pl):	Narzêdzie imake
+Summary:	imake utilities - C preprocessor interface to the make utility
+Summary(pl):	Narzêdzia imake - interfejs preprocesora C do narzêdzia make
 Name:		xorg-util-imake
 Version:	1.0.2
 Release:	1
@@ -25,9 +25,21 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 imake utility plus the following support programs: ccmakedep,
 mergelib, revpath, mkdirhier, makeg, cleanlinks, mkhtmlindex, xmkmf.
 
+imake is used to generate Makefiles from a template, a set of cpp
+macro functions, and a per-directory input file called an Imakefile.
+This allows machine dependencies (such as compiler options, alternate
+command names, and special make rules) to be kept separate from the
+descriptions of the various items to be built.
+
 %description -l pl
 Narzêdzie imake oraz nastêpuj±ce programy wspieraj±ce: ccmakedep,
 mergelib, revpath, mkdirhier, makeg, cleanlinks, mkhtmlindex, xmkmf.
+
+imake s³u¿y do generowania plików Makefile z szablonu, zbioru funkcji
+makr cpp oraz plików wej¶ciowych Imakefile umieszczonych w ka¿dym
+katalogu. Pozwala to na trzymanie elementów zale¿nych od maszyny
+(takich jak opcje kompilatora, alternatywne nazwy poleceñ oraz
+specjalne regu³y make) oddzielonych od opisów elementów do zbudoawnia.
 
 %prep
 %setup -q -n imake-%{version}
