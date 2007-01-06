@@ -2,7 +2,7 @@ Summary:	imake utilities - C preprocessor interface to the make utility
 Summary(pl):	Narzêdzia imake - interfejs preprocesora C do narzêdzia make
 Name:		xorg-util-imake
 Version:	1.0.2
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Development/Tools
 Source0:	http://xorg.freedesktop.org/releases/individual/util/imake-%{version}.tar.bz2
@@ -16,9 +16,9 @@ BuildRequires:	xorg-proto-xproto-devel
 BuildRequires:	xorg-util-util-macros >= 0.99.2
 Requires:	cpp
 Obsoletes:	xorg-util-xmkmf
-Obsoletes:	XFree86-imake
-Obsoletes:	X11-imake
-Obsoletes:	imake
+Obsoletes:	XFree86-imake < 1:7.0.0
+Obsoletes:	X11-imake < 1:7.0.0
+Obsoletes:	imake < 1:7.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
