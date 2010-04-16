@@ -13,7 +13,7 @@ BuildRequires:	automake
 BuildRequires:	cpp >= 6:4.0.0
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-proto-xproto-devel
-BuildRequires:	xorg-util-util-macros >= 0.99.2
+BuildRequires:	xorg-util-util-macros >= 1.4
 Requires:	cpp >= 6:4.0.0
 Requires:	xorg-cf-files
 Obsoletes:	X11-imake < 1:7.0.0
