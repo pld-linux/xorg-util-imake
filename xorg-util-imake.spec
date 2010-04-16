@@ -1,12 +1,12 @@
 Summary:	imake utilities - C preprocessor interface to the make utility
 Summary(pl.UTF-8):	Narzędzia imake - interfejs preprocesora C do narzędzia make
 Name:		xorg-util-imake
-Version:	1.0.2
-Release:	5
+Version:	1.0.3
+Release:	1
 License:	MIT
 Group:		X11/Development/Tools
 Source0:	http://xorg.freedesktop.org/releases/individual/util/imake-%{version}.tar.bz2
-# Source0-md5:	02fea5a02ba2857c7d81820c8e8b8e6f
+# Source0-md5:	ff553c4646edcc9e76b7308991ad421a
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
