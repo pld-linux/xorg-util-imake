@@ -7,6 +7,7 @@ License:	MIT
 Group:		X11/Development/Tools
 Source0:	http://xorg.freedesktop.org/releases/individual/util/imake-%{version}.tar.bz2
 # Source0-md5:	d5058b1317a85bedc1dc40c7e85c8d26
+Patch0:		%{name}-format.patch
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
@@ -44,6 +45,7 @@ specjalne reguły make) oddzielonych od opisów elementów do zbudoawnia.
 
 %prep
 %setup -q -n imake-%{version}
+%patch0 -p1
 
 %build
 %{__aclocal}
@@ -74,12 +76,12 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/mkhtmlindex
 %attr(755,root,root) %{_bindir}/revpath
 %attr(755,root,root) %{_bindir}/xmkmf
-%{_mandir}/man1/ccmakedep.1x*
-%{_mandir}/man1/cleanlinks.1x*
-%{_mandir}/man1/imake.1x*
-%{_mandir}/man1/makeg.1x*
-%{_mandir}/man1/mergelib.1x*
-%{_mandir}/man1/mkdirhier.1x*
-%{_mandir}/man1/mkhtmlindex.1x*
-%{_mandir}/man1/revpath.1x*
-%{_mandir}/man1/xmkmf.1x*
+%{_mandir}/man1/ccmakedep.1*
+%{_mandir}/man1/cleanlinks.1*
+%{_mandir}/man1/imake.1*
+%{_mandir}/man1/makeg.1*
+%{_mandir}/man1/mergelib.1*
+%{_mandir}/man1/mkdirhier.1*
+%{_mandir}/man1/mkhtmlindex.1*
+%{_mandir}/man1/revpath.1*
+%{_mandir}/man1/xmkmf.1*

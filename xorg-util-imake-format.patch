@@ -1,0 +1,11 @@
+--- imake-1.0.6/imake.c.orig	2013-07-23 06:53:04.000000000 +0200
++++ imake-1.0.6/imake.c	2013-07-23 18:04:49.571625377 +0200
+@@ -1005,7 +1005,7 @@
+     abort ();
+ 
+   while (fgets (command, len, fp))
+-    fprintf (inFile, command);
++    fputs (command, inFile);
+ 
+   len = pclose (fp);
+   remove (aout);
